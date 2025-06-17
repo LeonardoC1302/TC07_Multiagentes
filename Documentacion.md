@@ -189,3 +189,6 @@ Asegúrate de que estén instaladas (ver Prerrequisitos de la Guía de Usuario):
 *   **Corregir Error del Informe**: Corregir el error en `response_coordinator_agent` donde se muestran `attack_patterns` en lugar de `recommendations` en el informe final.
 *   **Gestión de Configuración**: Externalizar nombres de modelos, URLs y rutas codificadas.
 *   **Pruebas**: Implementar pruebas unitarias y de integración para los agentes y el flujo de trabajo general.
+
+### 9. Video de Explicación
+* https://drive.google.com/drive/folders/1zxNq9mgsDm8Bv2rOENXWfShmK2D90Rch?usp=drive_link  
