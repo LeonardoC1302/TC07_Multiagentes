@@ -1,0 +1,3 @@
+HTTPS: https://github.com/LeonardoC1302/TC07_Multiagentes.git
+
+GitHub CLI: gh repo clone LeonardoC1302/TC07_Multiagentes
