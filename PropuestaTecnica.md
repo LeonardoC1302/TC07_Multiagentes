@@ -57,7 +57,7 @@ Cada agente es un método dentro de `CybersecurityMultiagent` y realiza una tare
     *   **Interacción LLM**: Solicita al LLM que clasifique la severidad como BAJA, MEDIA, ALTA o CRÍTICA basándose en el tipo de amenaza y fragmentos de logs.
     *   **Lógica**: Incluye lógica de respaldo para asignar severidad basada en mapeos predefinidos si la respuesta del LLM es inválida.
     *   **Salida**: Actualiza `state['severity_level']`.
-    ![Architecture Diagram](./assets/architecture.png)
+    ![Diagrama de Arquitectura](./assets/arquitectura.png)
 
 
 3.  **`pattern_matcher_agent(state: SecurityState)` (Agente RAG)**:
