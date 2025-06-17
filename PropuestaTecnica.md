@@ -13,6 +13,7 @@ El sistema se construye alrededor de una clase central `CybersecurityMultiagent`
 *   **Embeddings:** `langchain_huggingface.HuggingFaceEmbeddings` (modelo: `sentence-transformers/all-MiniLM-L6-v2`) para generar embeddings de texto.
 *   **Almacén Vectorial:** `langchain_community.vectorstores.Chroma` para almacenar y consultar embeddings de patrones de amenazas, habilitando RAG.
 *   **Gestión de Estado:** Un `SecurityState` TypedDict se utiliza para pasar datos y contexto entre agentes a lo largo de la ejecución del grafo.
+![diagrama interacción](./Assets/arquitectura.png)
 
 ## 3. Componentes
 
@@ -57,8 +58,6 @@ Cada agente es un método dentro de `CybersecurityMultiagent` y realiza una tare
     *   **Interacción LLM**: Solicita al LLM que clasifique la severidad como BAJA, MEDIA, ALTA o CRÍTICA basándose en el tipo de amenaza y fragmentos de logs.
     *   **Lógica**: Incluye lógica de respaldo para asignar severidad basada en mapeos predefinidos si la respuesta del LLM es inválida.
     *   **Salida**: Actualiza `state['severity_level']`.
-    ![diagrama interacción](./Assets/arquitectura.png)
-
 
 3.  **`pattern_matcher_agent(state: SecurityState)` (Agente RAG)**:
     *   **Propósito**: Recupera patrones de amenazas conocidos relevantes del almacén vectorial.
