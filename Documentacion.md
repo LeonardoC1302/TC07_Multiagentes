@@ -34,7 +34,7 @@ Este sistema analiza registros (logs) de seguridad para identificar posibles ame
 
 Al ejecutar, verás una descripción general del sistema y los escenarios de amenaza disponibles:
 
-# 🔒 Sistema Multiagente - Analista de Ciberseguridad
+# Sistema Multiagente - Analista de Ciberseguridad
 Este sistema utiliza 5 agentes especializados:
 
 1. Analizador de Logs: Parsea y categoriza eventos

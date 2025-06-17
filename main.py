@@ -429,7 +429,7 @@ def main():
         elif choice in scenarios:
             scenario_name, scenario_key = scenarios[choice]
             log_data = analyzer.sample_logs[scenario_key]
-            print(f"\n🎯 Analizando escenario: {scenario_name}")
+            print(f"\nAnalizando escenario: {scenario_name}")
         else:
             print("Opción no válida")
             continue
@@ -438,8 +438,8 @@ def main():
             print("No se proporcionaron logs para analizar")
             continue
 
-        print(f"\n🔍 Ejecutando análisis multiagente...")
-        print("⚙️ Procesando logs...")
+        print(f"\nEjecutando análisis multiagente...")
+        print("Procesando logs...")
 
         try:
             report = analyzer.analyze_logs(log_data)
@@ -452,7 +452,7 @@ def main():
                     f.write(report)
                 print(f"Reporte guardado como: {report_filename}")
         except Exception as e:
-            print(f"\n❌ Error durante el análisis: {e}")
+            print(f"\nError durante el análisis: {e}")
             print("Asegúrate de que Ollama esté ejecutándose con el modelo llama3.2")
 
 if __name__ == "__main__":
