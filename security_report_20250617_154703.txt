@@ -1,0 +1,57 @@
+
+        === REPORTE DE ANÁLISIS DE SEGURIDAD ===
+
+        ALERTA: [AERTA MEDIA] Brute Force Attack DETECTADO
+
+Descripción breve del incidente:
+Se ha detectado un intento de ataque por fuerza bruta contra la base de datos de nuestra empresa, lo que podría provocar la exposición no autorizada de información confidencial.
+
+Acción requerida:
+- Inmediatamente cambiar todas las contraseñas de acceso para los usuarios afectados.
+- Realizar un análisis de seguridad detallado para identificar cualquier debilidad en la configuración de nuestra infraestructura.
+- Notificar a nuestros servicios de atención al cliente y al equipo de seguridad para coordinar una respuesta adecuada.
+
+Timestamp: 2025-06-17 15:46:58
+
+        ANÁLISIS DE AMENAZA:
+        **Análisis detallado del Brute Force Attack**
+
+**Descripción del ataque y sus características**
+
+El incidente reportado es un ejemplo de Ataque de Fuerza Bruta (Brute Force Attack), una técnica común utilizada por cibercriminales para intentar acceder a sistemas informáticos sin autorización. En este caso, se han detectado múltiples intentos de login fallidos desde la misma IP en un corto período de tiempo.
+
+El patrón observado es el siguiente:
+
+* Más de 10 intentos de login fallidos en un período de 5 minutos.
+* Todos los intentos provienen de la misma IP.
+* El ataque se ha llevado a cabo en un breve período de tiempo, lo que sugiere una actividad agresiva y potencialmente dirigida hacia obtener acceso no autorizado.
+
+**Impacto potencial en la organización**
+
+El impacto potencial del Brute Force Attack en la organización es significativo. Si el ataque se logra, los cibercriminales podrían obtener acceso no autorizado a sistemas críticos, lo que podría provocar pérdidas de datos, daños a la reputación y costos económicos elevados.
+
+Además, un ataque de este tipo también puede tener un impacto en la confianza de los usuarios y en la seguridad de la información. Los empleados y clientes podrían sentirse incómodos al saber que sus contraseñas han sido objeto de un intento de fuerza bruta.
+
+**Vectores de ataque utilizados**
+
+Basándonos en el análisis del incidente, se pueden identificar los siguientes vectores de ataque:
+
+* **IP**: La misma IP ha sido utilizada para realizar todos los intentos de login fallidos.
+* **Protocolo de red**: El protocolo de red utilizado es probablemente TCP/IP.
+* **Puertos**: Los puertos 22 (SSH) y 80/443 (HTTP/HTTPS) podrían estar siendo utilizados para acceder al sistema.
+
+**Indicadores de compromiso (IOCs)**
+
+A continuación, se presentan los Indicadores de Compromiso observados en este incidente:
+
+* **IP**: La IP en cuestión ha sido asociada con múltiples intentos de login fallidos.
+* **Puertos**: Los puertos 22 (SSH) y 80/443 (HTTP/HTTPS) han sido utilizados para acceder al sistema.
+* **Patrón de login**: El patrón de login utilizado es el patrón de fuerza bruta, con más de 10 intentos de login fallidos en un período de 5 minutos.
+* **Hora y día**: Los intentos de login se han llevado a cabo durante la noche del jueves.
+
+En conclusión, este incidente reportado es un ejemplo claro de Ataque de Fuerza Bruta. Es importante que la organización tome medidas para prevenir y detectar este tipo de ataques, como implementar medidas de seguridad adicionales, realizar auditorías de seguridad regulares y capacitar a los empleados sobre las mejores prácticas de seguridad.
+
+        RECOMENDACIONES DE RESPUESTA:
+        Brute Force Attack: Múltiples intentos de login fallidos desde la misma IP en corto período. Patrón: >10 fallos en 5 minutos. Severidad: Media-Alta.
+Brute Force Attack: Múltiples intentos de login fallidos desde la misma IP en corto período. Patrón: >10 fallos en 5 minutos. Severidad: Media-Alta.
+Brute Force Attack: Múltiples intentos de login fallidos desde la misma IP en corto período. Patrón: >10 fallos en 5 minutos. Severidad: Media-Alta.
